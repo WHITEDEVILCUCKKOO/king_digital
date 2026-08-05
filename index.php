@@ -26,8 +26,8 @@
         width: 90%;
         padding: 120px 10px 20px 10px;
         margin: auto;
-        display: grid;
-        grid-template-columns: 60% 40%;
+        display: flex;
+        gap: 20px;
         z-index: 10;
     }
 
@@ -263,6 +263,8 @@
 </style>
 
 <main>
+
+<!-- ////////////////////////////////////////////////// Hero Section ////////////////////////////////////////// -->
     <section class="home-hero">
         <canvas id="canvas"></canvas>
         <div class="home-hero_content">
@@ -313,6 +315,8 @@
             </div>
         </div>
     </section>
+
+<!-- /////////////////////////////////////////////////// Hero Section End ///////////////////////////////////////////     -->
 </main>
 
 <script>
