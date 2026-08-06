@@ -761,6 +761,251 @@
     }
 
     /* ////////////////////////////////////////////////// About Content 2 Styling End ////////////////////////////////////////// */
+
+    /* ////////////////////////////////////////////////// Service Section Styling Start ////////////////////////////////////////// */
+
+    .home-service {
+        width: 100%;
+        max-width: 1440px;
+        padding: 80px 0;
+        background: linear-gradient(135deg, #eef2f7, #f6f8fb);
+    }
+
+    .home-service_content {
+        width: 90%;
+        max-width: 1120px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px 22px;
+        align-items: start;
+    }
+
+    .home-service_content--badge,
+    .home-service_content--heading,
+    .home-service_content--para {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .home-service_content--badge {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        justify-self: center;
+        padding: 9px 18px;
+        margin-bottom: 18px;
+        border-radius: 999px;
+        color: #df4d0f;
+        font-size: 13px;
+        font-weight: 900;
+        background: rgba(255, 255, 255, .55);
+        border: 1px solid rgba(255, 255, 255, .85);
+        box-shadow: 0 14px 34px rgba(60, 60, 80, .08);
+    }
+
+    .home-service_content--badge span {
+        position: relative;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #df4d0f;
+    }
+
+    .home-service_content--badge span::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #df4d0f31;
+        animation: homeAboutBlinkingDot 1.5s infinite;
+    }
+
+    .home-service_content--badge p {
+        margin: 0;
+    }
+
+    .home-service_content--heading {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.25;
+        color: #101827;
+        margin-bottom: 16px;
+    }
+
+    .home-service_content--heading span {
+        background: linear-gradient(90deg, #ef560d 0%, #ff9448 45%, #123d6b 100%);
+        background-size: 220% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: aboutHeadingGradient 4s ease-in-out infinite;
+    }
+
+    .home-service_content--para {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #6b7280;
+        margin-bottom: 20px;
+    }
+
+    .home-service_content--para strong {
+        color: #101827;
+        font-weight: 800;
+    }
+
+    .home-service_content--card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 14px 18px 26px;
+        background: #ffffff;
+        border-radius: 24px;
+        box-shadow: 0 18px 40px rgba(30, 41, 59, .08);
+        transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .home-service_content--card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 24px 50px rgba(30, 41, 59, .13);
+    }
+
+    .home-service_content--card-img {
+        aspect-ratio: 6/4;
+        width: 100%;
+        height: 160px;
+        border-radius: 16px;
+        overflow: hidden;
+        background: linear-gradient(135deg, #1f2530, #0c1016);
+    }
+
+    .home-service_content--card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .home-service_content--card-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 2px solid #fde3d3;
+        box-shadow: 0 10px 24px rgba(30, 41, 59, .12);
+        z-index: 1;
+    }
+
+    .home-service_content--card-icon span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ee5209;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .home-service_content--card-heading {
+        margin-top: 14px;
+    }
+
+    .home-service_content--card-heading h3 {
+        font-size: 17px;
+        font-weight: 800;
+        color: #101827;
+        text-align: center;
+    }
+
+    .home-service_content--card-para {
+        margin-top: 8px;
+        margin-bottom: 18px;
+    }
+
+    .home-service_content--card-para p {
+        font-size: 13px;
+        line-height: 1.65;
+        color: #6b7280;
+        text-align: center;
+    }
+
+    .home-service_content--card-cta {
+        margin-top: auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 9px 20px;
+        border-radius: 999px;
+        color: #ee5209 !important;
+        font-size: 13px;
+        font-weight: 800;
+        background: #fdf4ee;
+        border: 1px solid #f6d9c2;
+        transition: transform .2s ease, background .2s ease;
+    }
+
+    .home-service_content--card-cta:hover {
+        transform: translateY(-3px);
+        background: #fbe8da;
+    }
+
+    .home-service_content--footer-cta {
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin-top: 14px;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 17px 34px;
+        border-radius: 999px;
+        color: #ffffff !important;
+        font-size: 15px;
+        font-weight: 700;
+        overflow: hidden;
+        background: linear-gradient(135deg, #ff9448, #f0530f);
+        box-shadow: 0 22px 44px rgba(240, 83, 15, .30);
+        transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .home-service_content--footer-cta:hover {
+        transform: translateY(-4px);
+    }
+
+    .home-service_content--footer-cta::after {
+        content: "";
+        position: absolute;
+        top: -75%;
+        left: -120%;
+        width: 42%;
+        height: 250%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .58), transparent);
+        transform: rotate(24deg);
+        animation: homeHeroShine 4.5s ease-in-out infinite;
+        pointer-events: none;
+    }
+
+    @media (max-width: 980px) {
+        .home-service_content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 560px) {
+        .home-service_content {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* ////////////////////////////////////////////////// Service Section Styling End ////////////////////////////////////////// */
 </style>
 
 <main>
@@ -895,6 +1140,146 @@
         </div>
     </section>
     <!-- /////////////////////////////////////////////////// About Section End ///////////////////////////////////////////     -->
+    <!-- /////////////////////////////////////////////////// Service Section Start ///////////////////////////////////////////     -->
+
+    <section class="home-service">
+        <div class="home-service_content">
+            <div class="home-service_content--badge">
+                <span></span>
+                <p>Our Core Services</p>
+            </div>
+            <div class="home-service_content--heading">
+                <h2>Business Communication &amp;
+                    <span>Digital Growth Solutions</span>
+                </h2>
+            </div>
+            <div class="home-service_content--para">
+                <p>Premium digital, communication and marketing solutions created to improve <strong>brand visibility, customer communication, leads and business growth.</strong></p>
+            </div>
+            <div class="home-service_content--card">
+                <div class="home-service_content--card-img">
+                    <img src="assets/images/services/service-web-developer.avif" alt="Website Development">
+                </div>
+                <div class="home-service_content--card-icon">
+                    <span>&lt;/&gt;</span>
+                </div>
+                <div class="home-service_content--card-heading">
+                    <h3>Website Development</h3>
+                </div>
+                <div class="home-service_content--card-para">
+                    <p>Clean, responsive and conversion-focused websites developed to improve trust, speed and brand value.</p>
+                </div>
+                <a href="#" class="home-service_content--card-cta">Explore <span>→</span></a>
+            </div>
+            <div class="home-service_content--card">
+                <div class="home-service_content--card-img">
+                    <img src="assets/images/services/service-bulk-sms.avif" alt="Bulk SMS">
+                </div>
+                <div class="home-service_content--card-icon">
+                    <span>💬</span>
+                </div>
+                <div class="home-service_content--card-heading">
+                    <h3>Bulk SMS</h3>
+                </div>
+                <div class="home-service_content--card-para">
+                    <p>Reliable promotional and transactional SMS campaigns for fast and effective customer communication.</p>
+                </div>
+                <a href="#" class="home-service_content--card-cta">Explore <span>→</span></a>
+            </div>
+            <div class="home-service_content--card">
+                <div class="home-service_content--card-img">
+                    <img src="assets/images/services/service-otp-sms.avif" alt="OTP SMS">
+                </div>
+                <div class="home-service_content--card-icon">
+                    <span>🔐</span>
+                </div>
+                <div class="home-service_content--card-heading">
+                    <h3>OTP SMS</h3>
+                </div>
+                <div class="home-service_content--card-para">
+                    <p>Secure OTP delivery for login, account verification, transactions and customer authentication.</p>
+                </div>
+                <a href="#" class="home-service_content--card-cta">Explore <span>→</span></a>
+            </div>
+            <div class="home-service_content--card">
+                <div class="home-service_content--card-img">
+                    <img src="assets/images/services/service-whatsapp.avif" alt="WhatsApp API">
+                </div>
+                <div class="home-service_content--card-icon">
+                    <span>📲</span>
+                </div>
+                <div class="home-service_content--card-heading">
+                    <h3>WhatsApp API</h3>
+                </div>
+                <div class="home-service_content--card-para">
+                    <p>Automated WhatsApp notifications, marketing messages and customer support communication.</p>
+                </div>
+                <a href="#" class="home-service_content--card-cta">Explore <span>→</span></a>
+            </div>
+            <div class="home-service_content--card">
+                <div class="home-service_content--card-img">
+                    <img src="assets/images/services/service-voice-sms.avif" alt="Voice SMS">
+                </div>
+                <div class="home-service_content--card-icon">
+                    <span>🎙️</span>
+                </div>
+                <div class="home-service_content--card-heading">
+                    <h3>Voice SMS</h3>
+                </div>
+                <div class="home-service_content--card-para">
+                    <p>Professional pre-recorded voice campaigns designed to communicate clearly with large customer audiences.</p>
+                </div>
+                <a href="#" class="home-service_content--card-cta">Explore <span>→</span></a>
+            </div>
+            <div class="home-service_content--card">
+                <div class="home-service_content--card-img">
+                    <img src="assets/images/services/service-ivr.avif" alt="IVR Solutions">
+                </div>
+                <div class="home-service_content--card-icon">
+                    <span>☎️</span>
+                </div>
+                <div class="home-service_content--card-heading">
+                    <h3>IVR Solutions</h3>
+                </div>
+                <div class="home-service_content--card-para">
+                    <p>Smart call routing, automated greetings and professional customer handling with customized IVR.</p>
+                </div>
+                <a href="#" class="home-service_content--card-cta">Explore <span>→</span></a>
+            </div>
+            <div class="home-service_content--card">
+                <div class="home-service_content--card-img">
+                    <img src="assets/images/services/service-google.avif" alt="Google Ads">
+                </div>
+                <div class="home-service_content--card-icon">
+                    <span>🔍</span>
+                </div>
+                <div class="home-service_content--card-heading">
+                    <h3>Google Ads</h3>
+                </div>
+                <div class="home-service_content--card-para">
+                    <p>Search advertising campaigns focused on qualified leads, accurate tracking and measurable growth.</p>
+                </div>
+                <a href="#" class="home-service_content--card-cta">Explore <span>→</span></a>
+            </div>
+            <div class="home-service_content--card">
+                <div class="home-service_content--card-img">
+                    <img src="assets/images/services/service-meta.avif" alt="Meta Ads">
+                </div>
+                <div class="home-service_content--card-icon">
+                    <span>📣</span>
+                </div>
+                <div class="home-service_content--card-heading">
+                    <h3>Meta Ads</h3>
+                </div>
+                <div class="home-service_content--card-para">
+                    <p>Facebook and Instagram advertising campaigns built for traffic, product sales and quality lead generation.</p>
+                </div>
+                <a href="#" class="home-service_content--card-cta">Explore <span>→</span></a>
+            </div>
+            <a href="#" class="home-service_content--footer-cta">View All Services <span>→</span></a>
+        </div>
+    </section>
+    <!-- /////////////////////////////////////////////////// Service Section End ///////////////////////////////////////////     -->
 </main>
 
 <script>
