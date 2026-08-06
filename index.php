@@ -1006,6 +1006,301 @@
     }
 
     /* ////////////////////////////////////////////////// Service Section Styling End ////////////////////////////////////////// */
+
+    /* ////////////////////////////////////////////////// Web Design Section Styling Start ////////////////////////////////////////// */
+
+    .home-webDesign {
+        width: 100%;
+        max-width: 1440px;
+        padding: 80px 0;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
+    }
+
+    .home-webDesign_content {
+        width: 90%;
+        max-width: 1120px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .home-webDesign_content--badge {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        padding: 9px 18px;
+        margin-bottom: 18px;
+        border-radius: 999px;
+        color: #df4d0f;
+        font-size: 13px;
+        font-weight: 900;
+        background: rgba(255, 255, 255, .55);
+        border: 1px solid rgba(255, 255, 255, .85);
+        box-shadow: 0 14px 34px rgba(60, 60, 80, .08);
+    }
+
+    .home-webDesign_content--badge span {
+        position: relative;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #df4d0f;
+    }
+
+    .home-webDesign_content--badge span::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #df4d0f31;
+        animation: homeAboutBlinkingDot 1.5s infinite;
+    }
+
+    .home-webDesign_content--badge p {
+        margin: 0;
+    }
+
+    .home-webDesign_content--heading {
+        margin-bottom: 16px;
+    }
+
+    .home-webDesign_content--heading h2 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.25;
+        color: #101827;
+    }
+
+    .home-webDesign_content--heading span {
+        display: block;
+        background: linear-gradient(90deg, #ef560d 0%, #ff9448 45%, #123d6b 100%);
+        background-size: 220% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: aboutHeadingGradient 4s ease-in-out infinite;
+    }
+
+    .home-webDesign_content--para {
+        max-width: 720px;
+        margin: 0 auto 44px;
+    }
+
+    .home-webDesign_content--para p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #6b7280;
+    }
+
+    .home-webDesign_content--para strong {
+        color: #101827;
+        font-weight: 800;
+    }
+
+    /* ---- Grid ---- */
+
+    .home-webDesign_content--grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 260px);
+        gap: 20px;
+        text-align: left;
+    }
+
+    .home-webDesign_content--grid-items:first-child {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    .home-webDesign_content--grid-items {
+        position: relative;
+        border-radius: 22px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 18px 40px rgba(30, 41, 59, .10);
+    }
+
+    /* image swap layer */
+
+    .home-webDesign_content--grid-items-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-webDesign_content--grid-items-img img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: opacity .6s ease, transform 6s ease;
+    }
+
+    .home-webDesign_content--grid-items-img img.img-default {
+        opacity: 1;
+        transform: scale(1);
+        z-index: 0;
+    }
+
+    .home-webDesign_content--grid-items-img img.img-hover {
+        opacity: 0;
+        transform: scale(1.08);
+        z-index: 0;
+    }
+
+    .home-webDesign_content--grid-items:hover .img-default {
+        opacity: 0;
+    }
+
+    .home-webDesign_content--grid-items:hover .img-hover {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /* darkening gradient so text always reads, deepens on hover */
+
+    .home-webDesign_content--grid-items-img::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(16, 24, 39, 0) 35%, rgba(16, 24, 39, .78) 100%);
+        transition: background .4s ease;
+    }
+
+    .home-webDesign_content--grid-items:hover .home-webDesign_content--grid-items-img::after {
+        background: linear-gradient(180deg, rgba(16, 24, 39, .10) 0%, rgba(16, 24, 39, .94) 100%);
+    }
+
+    /* icon badge, top left */
+
+    .home-webDesign_content--grid-items-img>span {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 2;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: #123d6b;
+        color: #ffffff;
+        font-size: 15px;
+        box-shadow: 0 10px 22px rgba(18, 61, 107, .35);
+    }
+
+    /* card title */
+
+    .home-webDesign_content--grid-items-img h3 {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        z-index: 2;
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 800;
+        transition: bottom .4s ease;
+    }
+
+    .home-webDesign_content--grid-items:hover .home-webDesign_content--grid-items-img h3 {
+        bottom: 84px;
+    }
+
+    /* hover reveal: description + arrow */
+
+    .home-webDesign_content--hover-text {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        z-index: 3;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height .45s ease, opacity .35s ease;
+    }
+
+    .home-webDesign_content--grid-items:hover .home-webDesign_content--hover-text {
+        max-height: 140px;
+        opacity: 1;
+    }
+
+    .home-webDesign_content--hover-text p {
+        font-size: 13px;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, .88);
+        padding-right: 44px;
+    }
+
+    .home-webDesign_content--hover-text p::after {
+        content: "";
+        display: block;
+        width: 36px;
+        height: 2px;
+        margin-top: 12px;
+        background: #ff8a45;
+    }
+
+    .home-webDesign_content--hover-text span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 15px;
+        background: linear-gradient(135deg, #ff9448, #f0530f);
+        box-shadow: 0 12px 26px rgba(240, 83, 15, .35);
+        transform: translateX(12px);
+        opacity: 0;
+        transition: transform .4s ease, opacity .4s ease;
+    }
+
+    .home-webDesign_content--grid-items:hover .home-webDesign_content--hover-text span {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    @media (max-width: 980px) {
+        .home-webDesign_content--grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 220px);
+        }
+
+        .home-webDesign_content--grid-items:first-child {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
+    }
+
+    @media (max-width: 620px) {
+        .home-webDesign_content--grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: none;
+        }
+
+        .home-webDesign_content--grid-items,
+        .home-webDesign_content--grid-items:first-child {
+            grid-column: 1 / 2;
+            grid-row: auto;
+            height: 260px;
+        }
+    }
+
+    /* ////////////////////////////////////////////////// Web Design Section Styling End ////////////////////////////////////////// */
 </style>
 
 <main>
@@ -1280,6 +1575,96 @@
         </div>
     </section>
     <!-- /////////////////////////////////////////////////// Service Section End ///////////////////////////////////////////     -->
+
+    <!-- ////////////////////////////////////////////////// Web Design Section ////////////////////////////////////////// -->
+
+    <section class="home-webDesign">
+        <div class="home-webDesign_content">
+            <div class="home-webDesign_content--badge">
+                <span></span>
+                <p>Web Design Solutions</p>
+            </div>
+            <div class="home-webDesign_content--heading">
+                <h2>Website Types Designed for
+                    <span>Real Business Growth</span>
+                </h2>
+            </div>
+            <div class="home-webDesign_content--para">
+                <p>We do not create websites that only look attractive. We build a <strong>strong digital presence</strong> with professional design, clean user experience and pages focused on leads, sales and measurable results.</p>
+            </div>
+
+            <div class="home-webDesign_content--grid">
+
+                <div class="home-webDesign_content--grid-items">
+                    <div class="home-webDesign_content--grid-items-img">
+                        <img class="img-default" src="assets/images/webDesign/corporate-websites.avif" alt="Corporate Websites">
+                        <img class="img-hover" src="assets/images/webDesign/corporate-websites-hover.avif" alt="Corporate Websites">
+                        <span>🏢</span>
+                        <h3>Corporate Websites</h3>
+                    </div>
+                    <div class="home-webDesign_content--hover-text">
+                        <p>Build a strong professional identity and present your services, values and expertise through a modern website designed to earn customer trust.</p>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <div class="home-webDesign_content--grid-items">
+                    <div class="home-webDesign_content--grid-items-img">
+                        <img class="img-default" src="assets/images/webDesign/lead-capture-page.avif" alt="Lead Capture Pages">
+                        <img class="img-hover" src="assets/images/webDesign/lead-capture-page-hover.avif" alt="Lead Capture Pages">
+                        <span>🎯</span>
+                        <h3>Lead Capture Pages</h3>
+                    </div>
+                    <div class="home-webDesign_content--hover-text">
+                        <p>Focused, distraction-free pages built to turn visitors into qualified leads for your sales team.</p>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <div class="home-webDesign_content--grid-items">
+                    <div class="home-webDesign_content--grid-items-img">
+                        <img class="img-default" src="assets/images/webDesign/blog.avif" alt="Blog Websites">
+                        <img class="img-hover" src="assets/images/webDesign/blog-hover.avif" alt="Blog Websites">
+                        <span>✍️</span>
+                        <h3>Blog Websites</h3>
+                    </div>
+                    <div class="home-webDesign_content--hover-text">
+                        <p>Content-first websites structured for SEO growth, reader engagement and long-term organic traffic.</p>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <div class="home-webDesign_content--grid-items">
+                    <div class="home-webDesign_content--grid-items-img">
+                        <img class="img-default" src="assets/images/webDesign/landing-page.avif" alt="Landing Pages">
+                        <img class="img-hover" src="assets/images/webDesign/landing-page-hover.avif" alt="Landing Pages">
+                        <span>🚀</span>
+                        <h3>Landing Pages</h3>
+                    </div>
+                    <div class="home-webDesign_content--hover-text">
+                        <p>High-converting single-goal pages built for ad campaigns, launches and product promotions.</p>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <div class="home-webDesign_content--grid-items">
+                    <div class="home-webDesign_content--grid-items-img">
+                        <img class="img-default" src="assets/images/webDesign/dynamic-website.avif" alt="Dynamic Websites">
+                        <img class="img-hover" src="assets/images/webDesign/dynamic-website-hover.avif" alt="Dynamic Websites">
+                        <span>⚙️</span>
+                        <h3>Dynamic Websites</h3>
+                    </div>
+                    <div class="home-webDesign_content--hover-text">
+                        <p>Database-driven websites with admin panels, user accounts and content that updates in real time.</p>
+                        <span>→</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- /////////////////////////////////////////////////// Web Design Section End ///////////////////////////////////////////     -->
 </main>
 
 <script>
