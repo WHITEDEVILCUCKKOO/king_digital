@@ -6,8 +6,12 @@
     .home-hero {
         position: relative;
         width: 100%;
-        height: 545px;
-        padding: 10px 20px;
+        max-width: 1440px;
+        height: 100%;
+        max-height: 578px;
+        display: flex;
+        align-items: center;
+        padding: 118px 0 55px;
         overflow: hidden;
         background: radial-gradient(circle at 8% 18%, rgba(255, 92, 18, .34), transparent 30%), radial-gradient(circle at 90% 82%, rgba(255, 121, 35, .30), transparent 35%), linear-gradient(135deg, #ffbf98 0%, #ffe9dc 48%, #ffb17d 100%);
     }
@@ -17,24 +21,27 @@
         top: 0;
         left: 0;
         width: 100%;
+        max-width: 1440px;
         height: 100%;
+        max-height: 578px;
         pointer-events: none;
     }
 
     .home-hero_content {
-        position: relative;
         width: 90%;
-        padding: 120px 10px 20px 10px;
-        margin: auto;
+        max-width: 1120px;
+        margin: 0 auto;
         display: flex;
-        gap: 20px;
-        z-index: 10;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        height: 100%;
+        z-index: 1;
     }
 
     .home-hero_content--text {
-        display: flex;
-        flex-direction: column;
-        max-width: 650px;
+        flex: 1;
+        max-width: 620px;
     }
 
     .home-hero_content--upper-feature {
@@ -56,8 +63,11 @@
         box-shadow: 0 14px 34px rgba(140, 50, 20, .14);
         overflow: hidden;
         white-space: nowrap;
-        width: 53%;
+        width: fit-content;
+        overflow: hidden;
     }
+
+
 
     .home-hero_content--bullet {
         position: relative;
@@ -98,13 +108,25 @@
         }
     }
 
+    .home-hero_content--upper-feature::after {
+        content: "";
+        position: absolute;
+        top: -75%;
+        left: -120%;
+        width: 42%;
+        height: 250%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .58), transparent);
+        transform: rotate(24deg);
+        animation: homeHeroShine 4.5s ease-in-out infinite;
+        pointer-events: none;
+    }
+
     .home-hero_content--heading {
-        max-width: 650px;
-        margin-bottom: 15px;
-        line-height: 1.15;
-        font-weight: 900;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.08;
         color: #101827;
-        font-size: 45px;
+        margin-bottom: 20px;
     }
 
     .home-hero_content--heading h1 {
@@ -116,37 +138,52 @@
     }
 
     .home-hero_content--para {
-        max-width: 630px;
-        line-height: 1.7;
-        font-size: 15px;
-        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #424f63;
+        margin-bottom: 20px;
     }
 
     .home-hero_content--cta {
         display: flex;
-        justify-content: flex-start;
         align-items: center;
-        gap: 10px;
-        flex-wrap: nowrap;
+        gap: 16px;
+        margin-bottom: 32px;
     }
 
     .home-hero_content--cta a {
-        text-decoration: none;
-        padding: 15px 25px;
-        margin-top: 10px;
-        text-align: center;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 30px;
         border-radius: 999px;
-        letter-spacing: 1.5;
-        transition: ease 0.5s;
+        font-size: 16px;
+        font-weight: 700;
+        transition: transform .25s ease, box-shadow .25s ease;
+        overflow: hidden;
     }
 
     .home-hero_content--cta a:hover {
-        transform: translateY(-5px);
+        transform: translateY(-4px);
     }
 
     .home-hero_content--cta1 {
         color: #ffffff !important;
         background: linear-gradient(135deg, #28202b, #f05214);
+    }
+
+    .home-hero_content--cta1::after {
+        content: "";
+        position: absolute;
+        top: -75%;
+        left: -120%;
+        width: 42%;
+        height: 250%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .58), transparent);
+        transform: rotate(24deg);
+        animation: homeHeroShine 4.5s ease-in-out infinite;
+        pointer-events: none;
     }
 
     .home-hero_content--cta2 {
@@ -155,12 +192,26 @@
         border: 1px solid rgba(255, 255, 255, .95);
     }
 
+    .home-hero_content--cta2::after {
+        content: "";
+        position: absolute;
+        top: -75%;
+        left: -120%;
+        width: 42%;
+        height: 250%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .58), transparent);
+        transform: rotate(24deg);
+        animation: homeHeroShine 4.5s ease-in-out infinite;
+        pointer-events: none;
+    }
+
     .home-hero_content--features {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         margin-top: 10px;
         padding: 10px 0;
+        overflow: hidden;
     }
 
     .home-hero_content--features-items {
@@ -168,8 +219,8 @@
         overflow: hidden;
         flex: 1 1 0;
         min-width: 0;
-        padding: 14px 12px;
-        border-radius: 18px;
+        padding: 20px 18px;
+        border-radius: 22px;
         text-align: center;
         background: linear-gradient(135deg, rgba(255, 255, 255, .58), rgba(255, 255, 255, .30));
         border: 1px solid rgba(255, 255, 255, .82);
@@ -179,11 +230,30 @@
         animation: heroItemFloat 5.5s ease-in-out infinite;
     }
 
+    .home-hero_content--features-items::after {
+        content: "";
+        position: absolute;
+        top: -75%;
+        left: -120%;
+        width: 42%;
+        height: 250%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .58), transparent);
+        transform: rotate(24deg);
+        animation: homeHeroShine 4.5s ease-in-out infinite;
+        pointer-events: none;
+    }
+
     .home-hero_content--features-items h4 {
         color: #df4d0f;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 24px;
+        font-weight: 800;
         letter-spacing: 1.2;
+    }
+
+    .home-hero_content--features-items p {
+        margin-top: 8px;
+        font-size: 15px;
+        color: #4b5563;
     }
 
     .home-hero_content--features-items:nth-child(2) {
@@ -208,13 +278,17 @@
 
     .home-hero_content--visual {
         position: relative;
-        max-width: 600px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .home-hero_content--visual-img {
-        width: 450px;
-        padding: 13px;
-        border-radius: 30px;
+        width: 100%;
+        max-width: 560px;
+        padding: 16px;
+        border-radius: 32px;
         background: rgba(255, 255, 255, .45);
         border: 1px solid rgba(255, 255, 255, .82);
         backdrop-filter: blur(20px);
@@ -225,8 +299,8 @@
 
     .home-hero_content--visual-img img {
         width: 100%;
-        object-fit: fill;
-        border-radius: 30px;
+        display: block;
+        border-radius: 24px;
     }
 
     .home-hero_content--visual-text {
@@ -234,37 +308,48 @@
         padding: 13px 17px;
         border-radius: 16px;
         color: #101827;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 900;
         background: linear-gradient(135deg, rgba(255, 255, 255, .72), rgba(255, 255, 255, .38));
         border: 1px solid rgba(255, 255, 255, .95);
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
-        box-shadow: 0 18px 42px rgba(70, 30, 10, .14);
+        box-shadow: 0 20px 60px rgba(60, 30, 10, .16);
         animation: heroItemFloat 5s ease-in-out infinite;
     }
 
-    .home-hero_content--visual-text:first-child {
-        top: 36px;
-        left: -35px;
+    .home-hero_content--visual-text--growth {
+        top: -15px;
+        left: -20px;
     }
 
-    .home-hero_content--visual-text:nth-child(2) {
-        top: 115px;
+    .home-hero_content--visual-text--campaigns {
+        top: 160px;
         right: -35px;
         animation-delay: .6s;
     }
 
-    .home-hero_content--visual-text:nth-child(3) {
-        bottom: 32px;
-        left: -18px;
+    .home-hero_content--visual-text--clients {
+        bottom: 20px;
+        left: -30px;
         animation-delay: 1s;
+    }
+
+    @keyframes homeHeroShine {
+        0% {
+            left: -120%;
+        }
+
+        45%,
+        100% {
+            left: 130%;
+        }
     }
 </style>
 
 <main>
 
-<!-- ////////////////////////////////////////////////// Hero Section ////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////// Hero Section ////////////////////////////////////////// -->
     <section class="home-hero">
         <canvas id="canvas"></canvas>
         <div class="home-hero_content">
@@ -303,20 +388,99 @@
                 <div class="home-hero_content--visual-img">
                     <img src="assets/images/hero-image.avif" alt="Hero Image">
                 </div>
-                <div class="home-hero_content--visual-text">
+                <div class="home-hero_content--visual-text home-hero_content--visual-text--growth">
                     📈 +320% Growth
                 </div>
-                <div class="home-hero_content--visual-text">
+                <div class="home-hero_content--visual-text home-hero_content--visual-text--campaigns">
                     🎯 High Converting Campaigns
                 </div>
-                <div class="home-hero_content--visual-text">
+                <div class="home-hero_content--visual-text home-hero_content--visual-text--clients">
                     ⭐ 15,000+ Clients
                 </div>
             </div>
         </div>
     </section>
 
-<!-- /////////////////////////////////////////////////// Hero Section End ///////////////////////////////////////////     -->
+    <!-- /////////////////////////////////////////////////// Hero Section End ///////////////////////////////////////////     -->
 </main>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const hero = document.querySelector('.home-hero');
+
+    let width, height;
+
+    function resize() {
+        width = canvas.width = hero.offsetWidth;
+        height = canvas.height = hero.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', () => {
+        resize();
+        initDots();
+    });
+
+    const SPACING = 20,
+        BASE_RADIUS = 1,
+        REPEL_RADIUS = 120,
+        REPEL_STRENGTH = 40,
+        EASE = 0.12;
+    let dots = [];
+
+    function initDots() {
+        dots = [];
+        const cols = Math.ceil(width / SPACING) + 1;
+        const rows = Math.ceil(height / SPACING) + 1;
+        for (let i = 0; i < cols; i++)
+            for (let j = 0; j < rows; j++)
+                dots.push({
+                    baseX: i * SPACING,
+                    baseY: j * SPACING,
+                    x: i * SPACING,
+                    y: j * SPACING
+                });
+    }
+    initDots();
+
+    const mouse = {
+        x: -9999,
+        y: -9999
+    };
+    hero.addEventListener('mousemove', (e) => {
+        const rect = hero.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+    });
+    hero.addEventListener('mouseleave', () => {
+        mouse.x = -9999;
+        mouse.y = -9999;
+    });
+
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+        for (const dot of dots) {
+            const dx = dot.baseX - mouse.x,
+                dy = dot.baseY - mouse.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            let targetX = dot.baseX,
+                targetY = dot.baseY;
+            if (dist < REPEL_RADIUS) {
+                const force = 1 - dist / REPEL_RADIUS;
+                const angle = Math.atan2(dy, dx);
+                targetX += Math.cos(angle) * force * REPEL_STRENGTH;
+                targetY += Math.sin(angle) * force * REPEL_STRENGTH;
+            }
+            dot.x += (targetX - dot.x) * EASE;
+            dot.y += (targetY - dot.y) * EASE;
+            ctx.beginPath();
+            ctx.arc(dot.x, dot.y, BASE_RADIUS, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(247, 238, 238, 0.86)';
+            ctx.fill();
+        }
+        requestAnimationFrame(animate);
+    }
+    animate();
+</script>
 
 <?php include 'include/footer.php' ?>
