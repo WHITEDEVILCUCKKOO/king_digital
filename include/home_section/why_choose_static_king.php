@@ -246,14 +246,19 @@
     }
 
     .skWc-badgeTag {
-        display: inline-block;
-        background-color: #fff1e6;
-        color: #ff7a1a;
-        font-size: 12.5px;
-        font-weight: 800;
-        padding: 8px 18px;
-        border-radius: 20px;
-        margin-bottom: 20px;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 14px;
+        padding: 8px 17px;
+        border: 1px solid rgba(239, 86, 13, 0.16);
+        border-radius: 999px;
+        color: #ef560d;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(255, 247, 242, 0.76));
+        -webkit-backdrop-filter: blur(14px);
+        backdrop-filter: blur(14px);
+        font-size: 13px;
+        font-weight: 900;
+        box-shadow: 0 9px 22px rgba(239, 86, 13, 0.07);
     }
 
     .skWc-heading {

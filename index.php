@@ -497,7 +497,7 @@
     /* ////////////////////////////////////////////////// About Content 2 Styling Start ////////////////////////////////////////// */
 
     .home-about_content2 {
-        width: 90%;
+        width: 70%;
         /* max-width: 1120px; */
         margin: 50px auto 0;
         display: flex;
@@ -1417,7 +1417,7 @@
         width: 100%;
         /* max-width: 1440px; */
         margin: 0 auto;
-        padding: 90px 0 140px;
+        padding: 40px 0;
         background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
     }
 
@@ -1432,6 +1432,7 @@
             "dashboard badge"
             "dashboard text";
         column-gap: 55px;
+        align-items: center;
     }
 
     /* ---- Badge ---- */
@@ -1500,6 +1501,7 @@
         width: 100%;
         max-width: 500px;
         min-height: 530px;
+        margin-top: 5rem;
     }
 
     .home-whatsapp_content--deshboard {
@@ -2074,7 +2076,7 @@
         position: relative;
         margin: 0;
         padding-left: 30px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 700;
         color: #101827;
         line-height: 1.5;
@@ -2853,7 +2855,7 @@
 <main>
 
     <!-- ////////////////////////////////////////////////// Hero Section ////////////////////////////////////////// -->
-    <section class="home-hero">
+    <section class="home-hero" id="first-section">
         <canvas id="canvas"></canvas>
         <div class="home-hero_content">
             <div class="home-hero_content--text">
@@ -2943,7 +2945,7 @@
                 <div class="home-about_content2--visual-img2">
                     <div class="home-about_content2--visual-img2--info">
                         <small>Trusted By Clients</small>
-                        <h3>15K+
+                        <h3><span class="count" data-target="15">0</span>K+
                             <span class="home-about_content2--visual-img2--icon">✦</span>
                         </h3>
                     </div>
