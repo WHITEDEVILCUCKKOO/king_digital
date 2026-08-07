@@ -10,3 +10,4 @@ function show_mobile_nav() {
         nowe785.innerHTML = "X";
     }
 }
+
