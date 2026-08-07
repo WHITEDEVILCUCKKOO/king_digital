@@ -441,7 +441,7 @@ a {
     }
 
     .mobile_menu_btn-show {
-        display: grid;
+        display: grid !important;
     }
 }
 
