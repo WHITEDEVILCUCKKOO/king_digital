@@ -54,3 +54,59 @@ function mobile_dropdown_links(icon) {
         contents[content_name].classList.remove("display_hiden_mob");
     }
 }
+
+
+
+
+// counting function function countUp(element, target)   ------ Start here ------
+
+function startCounter(element) {
+
+    const target = parseInt(element.dataset.target);
+    const duration = parseInt(element.dataset.speed) || 2000;
+
+    let start = 0;
+    const startTime = performance.now();
+
+    function update(currentTime) {
+
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+
+        const value = Math.floor(progress * target);
+
+        element.textContent = value.toLocaleString();
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = target.toLocaleString();
+        }
+    }
+
+    requestAnimationFrame(update);
+}
+
+
+// Run only once when visible
+const observer = new IntersectionObserver((entries, obs) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            startCounter(entry.target);
+
+            obs.unobserve(entry.target);
+        }
+
+    });
+
+}, {
+    threshold: 0.5
+});
+
+document.querySelectorAll(".count").forEach(item => {
+    observer.observe(item);
+});
+
+// ------ End here ------

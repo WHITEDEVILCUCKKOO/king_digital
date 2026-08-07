@@ -476,7 +476,7 @@
                           <span class="abx91-stars">SEO</span>
                       </div>
                       <div class="aesimgaw74">
-                          <img class="sdaae" src="img/seo.avif">
+                          <img class="sdaae" src="assets/images/img/seo.avif">
                       </div>
                       <h6 class="asedju84">
                           📆 June 2026 • 5 min Read
@@ -494,7 +494,7 @@
                           <span class="abx91-stars">Google Ads</span>
                       </div>
                       <div class="aesimgaw74">
-                          <img class="sdaae" src="img/Google Ads.avif" alt="James C.">
+                          <img class="sdaae" src="assets/images/img/Google Ads.avif" alt="James C.">
                       </div>
                       <h6 class="asedju84">
                           📆 June 2026 • 5 min Read
@@ -512,7 +512,7 @@
                           <span class="abx91-stars">Meta Ads</span>
                       </div>
                       <div class="aesimgaw74">
-                          <img class="sdaae" src="img/netflix.avif" alt="James C.">
+                          <img class="sdaae" src="assets/images/img/netflix.avif" alt="James C.">
                       </div>
                       <h6 class="asedju84">
                           📆 June 2026 • 5 min Read
@@ -530,7 +530,7 @@
                           <span class="abx91-stars">Website</span>
                       </div>
                       <div class="aesimgaw74">
-                          <img class="sdaae" src="img/website.avif" alt="James C.">
+                          <img class="sdaae" src="assets/images/img/website.avif" alt="James C.">
                       </div>
                       <h6 class="asedju84">
                           📆 June 2026 • 5 min Read
@@ -548,7 +548,7 @@
                           <span class="abx91-stars">Leads</span>
                       </div>
                       <div class="aesimgaw74">
-                          <img class="sdaae" src="img/leaders.avif" alt="James C.">
+                          <img class="sdaae" src="assets/images/img/leaders.avif" alt="James C.">
                       </div>
                       <h6 class="asedju84">
                           📆 June 2026 • 5 min Read
@@ -566,7 +566,7 @@
                           <span class="abx91-stars">Social</span>
                       </div>
                       <div class="aesimgaw74">
-                          <img class="sdaae" src="img/social.avif" alt="James C.">
+                          <img class="sdaae" src="assets/images/img/social.avif" alt="James C.">
                       </div>
                       <h6 class="asedju84">
                           📆 June 2026 • 5 min Read
@@ -583,7 +583,7 @@
                           <span class="abx91-stars">Branding</span>
                       </div>
                       <div class="aesimgaw74">
-                          <img class="sdaae" src="img/branding.avif" alt="James C.">
+                          <img class="sdaae" src="assets/images/img/branding.avif" alt="James C.">
                       </div>
                       <h6 class="asedju84">
                           📆 June 2026 • 5 min Read
@@ -600,7 +600,7 @@
                           <span class="abx91-stars">WhatsApp</span>
                       </div>
                       <div class="aesimgaw74">
-                          <img class="sdaae" src="img/whatsapp.avif" alt="James C.">
+                          <img class="sdaae" src="assets/images/img/whatsapp.avif" alt="James C.">
                       </div>
                       <h6 class="asedju84">
                           📆 June 2026 • 5 min Read

@@ -515,7 +515,7 @@
             You can also add a poster="thumbnail.jpg" attribute for a cover image.
           -->
                     <video controls poster="" autoplay muted preload="metadata">
-                        <source src="img/vidssave.com-Presentation-of-Static-King-_-staticking.com-1080P.mp4" type="video/mp4">
+                        <source src="assets/images/img/vidssave.com-Presentation-of-Static-King-_-staticking.com-1080P.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <span class="kdv-fullhd-badge">Full HD</span>
