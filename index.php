@@ -14,6 +14,8 @@
 
     <?php include_once 'include/home_section/bulk-sms-section.php'; ?>
 
+    <?php include_once 'include/home_section/ads-section.php'; ?>
+
     <?php include_once 'include/home_section/why_choose_static_king.php' ?>
 
     <?php include_once 'include/home_section/cloud_telephony_services.php' ?>
