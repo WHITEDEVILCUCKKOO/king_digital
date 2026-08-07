@@ -6,7 +6,7 @@
     .home-hero {
         position: relative;
         width: 100%;
-        max-width: 1440px;
+        /* max-width: 1440px; */
         height: 100%;
         max-height: 578px;
         display: flex;
@@ -372,7 +372,7 @@
 
     .home-about {
         width: 100%;
-        max-width: 1440px;
+        /* max-width: 1440px; */
         padding: 80px 0;
         background: linear-gradient(135deg, #fdf2e9, #fff5f0);
     }
@@ -498,7 +498,7 @@
 
     .home-about_content2 {
         width: 90%;
-        max-width: 1120px;
+        /* max-width: 1120px; */
         margin: 50px auto 0;
         display: flex;
         align-items: center;
@@ -803,7 +803,7 @@
 
     .home-service {
         width: 100%;
-        max-width: 1440px;
+        /* max-width: 1440px; */
         padding: 80px 0;
         background: linear-gradient(135deg, #eef2f7, #f6f8fb);
     }
@@ -1123,7 +1123,7 @@
 
     .home-webDesign {
         width: 100%;
-        max-width: 1440px;
+        /* max-width: 1440px; */
         padding: 80px 0;
         background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
     }
@@ -1340,7 +1340,7 @@
     }
 
     .home-webDesign_content--grid-items:hover .home-webDesign_content--hover-text {
-        max-height: 140px;
+        max-height: 150px;
         opacity: 1;
     }
 
@@ -1415,7 +1415,7 @@
 
     .home-whatsapp {
         width: 100%;
-        max-width: 1440px;
+        /* max-width: 1440px; */
         margin: 0 auto;
         padding: 90px 0 140px;
         background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
@@ -1426,12 +1426,12 @@
         max-width: 1120px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 1.05fr 1fr;
+        grid-template-columns: .98fr 1.02fr;
         grid-template-rows: auto 1fr;
         grid-template-areas:
             "dashboard badge"
             "dashboard text";
-        column-gap: 70px;
+        column-gap: 55px;
     }
 
     /* ---- Badge ---- */
@@ -1445,7 +1445,7 @@
         gap: 9px;
         width: fit-content;
         padding: 9px 18px;
-        margin-bottom: 18px;
+        margin-bottom: 10px;
         border-radius: 999px;
         color: #df4d0f;
         font-size: 13px;
@@ -1467,8 +1467,8 @@
         content: "";
         position: absolute;
         inset: 0;
-        width: 7px;
-        height: 7px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         background: #df4d0f31;
         animation: whatsappBlinkingDot 1.5s infinite;
@@ -1481,12 +1481,12 @@
         }
 
         70% {
-            opacity: .55;
+            opacity: .75;
         }
 
         100% {
             transform: scale(2);
-            opacity: .85;
+            opacity: .95;
         }
     }
 
@@ -1494,18 +1494,12 @@
         margin: 0;
     }
 
-    /* ---- Dashboard mockup ---- */
-
-    /* FIX: outer wrapper holds the mockup AND the floating badges.
-       It is position:relative but has NO overflow:hidden, so the
-       badges (which use negative offsets) can float freely instead
-       of being clipped by the mockup's rounded-corner clipping box. */
     .home-whatsapp_content--deshboard-wrap {
         grid-area: dashboard;
         position: relative;
         width: 100%;
         max-width: 500px;
-        margin-bottom: 100px;
+        min-height: 530px;
     }
 
     .home-whatsapp_content--deshboard {
@@ -1710,6 +1704,13 @@
         gap: 8px;
     }
 
+    .home-whatsapp_content--deshboard-heading-user span {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
     .home-whatsapp_content--deshboard-heading-user h4 {
         margin: 0;
         font-size: 12px;
@@ -1748,6 +1749,7 @@
         line-height: 1.5;
         padding: 8px 10px 15px;
         border-radius: 12px;
+        opacity: 0;
     }
 
     .home-whatsapp_content--deshboard-message .msg i {
@@ -1760,18 +1762,80 @@
     }
 
     .home-whatsapp_content--deshboard-message .msg-in {
+        position: relative;
         align-self: flex-start;
         background: #ffffff;
         color: #374151;
         border: 1px solid #eef1f5;
         border-bottom-left-radius: 3px;
+        animation: msgInLeft 8s ease-in forwards;
     }
 
     .home-whatsapp_content--deshboard-message .msg-out {
+        position: relative;
         align-self: flex-end;
         background: linear-gradient(135deg, #ffc199, #ff8a45);
         color: #3a1c05;
         border-bottom-right-radius: 3px;
+        animation: msgInRight 8s ease-in forwards;
+    }
+
+    .home-whatsapp_content--deshboard-message .msg:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .home-whatsapp_content--deshboard-message .msg:nth-child(2) {
+        animation-delay: .8s;
+    }
+
+    .home-whatsapp_content--deshboard-message .msg:nth-child(3) {
+        animation-delay: 1.6s;
+    }
+
+    .home-whatsapp_content--deshboard-message .msg:nth-child(4) {
+        animation-delay: 2.4s;
+    }
+
+    .home-whatsapp_content--deshboard-message .msg:nth-child(5) {
+        animation-delay: 3.2s;
+    }
+
+    .home-whatsapp_content--deshboard-message .msg:nth-child(6) {
+        animation-delay: 4s;
+    }
+
+    .hidden-chat {
+        opacity: 0 !important;
+        transform: translateY(10px);
+        transition: opacity .3s, transform .3s;
+    }
+
+    /* Incoming animation */
+    @keyframes msgInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-40px);
+        }
+
+        15%,
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Outgoing animation */
+    @keyframes msgInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(40px);
+        }
+
+        15%,
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     .home-whatsapp_content--deshboard-search {
@@ -1830,7 +1894,7 @@
     .home-whatsapp_content--features-items2 {
         position: absolute;
         right: -30px;
-        bottom: -90px;
+        bottom: 365px;
         z-index: 2;
         width: 235px;
         padding: 14px 16px;
@@ -1911,7 +1975,7 @@
 
     .home-whatsapp_content--text-heading h2 {
         margin: 0 0 16px;
-        font-size: 36px;
+        font-size: 40px;
         font-weight: 800;
         line-height: 1.25;
         color: #101827;
@@ -1939,21 +2003,30 @@
 
     .home-whatsapp_content--text-para p {
         margin: 0 0 26px;
-        font-size: 15px;
-        line-height: 1.7;
+        font-size: 14px;
+        line-height: 1.5;
         color: #6b7280;
     }
 
     .home-whatsapp_content--text-para strong {
         color: #101827;
-        font-weight: 800;
+        font-weight: 900;
     }
 
     .home-whatsapp_content--text-features {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 18px;
-        margin-bottom: 28px;
+        margin-bottom: 16px;
+    }
+
+    .home-whatsapp_content--text-features-item1,
+    .home-whatsapp_content--text-features-item2,
+    .home-whatsapp_content--text-features-item3,
+    .home-whatsapp_content--text-features-item4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .home-whatsapp_content--text-features>div {
@@ -1968,8 +2041,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 38px;
-        height: 38px;
+        width: 25px;
+        height: 25px;
         margin-bottom: 10px;
         border-radius: 10px;
         font-size: 17px;
@@ -3390,14 +3463,6 @@
     <section class="home-whatsapp">
         <div class="home-whatsapp_content">
 
-            <div class="home-whatsapp_content--badge">
-                <span></span>
-                <p>WhatsApp Business API</p>
-            </div>
-
-            <!-- FIX: wrapper (no overflow:hidden) now holds both the mockup box
-                 and the two floating badges, so the badges are no longer
-                 clipped/overlapping the mockup header. -->
             <div class="home-whatsapp_content--deshboard-wrap">
 
                 <div class="home-whatsapp_content--deshboard">
@@ -3475,7 +3540,7 @@
                                 </div>
                             </div>
 
-                            <div class="home-whatsapp_content--deshboard-message">
+                            <div class="home-whatsapp_content--deshboard-message .hidden-chat">
                                 <span class="msg msg-in">Hello, I need more details about your services.<i>10:32 AM</i></span>
                                 <span class="msg msg-out">Hi Rahul! Thank you for contacting King Digital. Please select the service you are interested in.<i>10:32 AM</i></span>
                                 <span class="msg msg-out">1. Website Development<br>2. Google &amp; Meta Ads<br>3. WhatsApp Business API<i>10:33 AM</i></span>
@@ -3510,6 +3575,10 @@
             </div>
 
             <div class="home-whatsapp_content--text">
+                <div class="home-whatsapp_content--badge">
+                    <span></span>
+                    <p>WhatsApp Business API</p>
+                </div>
                 <div class="home-whatsapp_content--text-heading">
                     <h2>Turn Every WhatsApp Chat
                         <span>Into A Business Opportunity</span>
@@ -3521,23 +3590,31 @@
                 <div class="home-whatsapp_content--text-features">
                     <div class="home-whatsapp_content--text-features-item1">
                         <span>🤖</span>
-                        <h5>Automated Chatbot Replies</h5>
-                        <p>Answer common questions instantly and guide customers automatically.</p>
+                        <div class="home-whatsapp_content--text-features-item-text">
+                            <h5>Automated Chatbot Replies</h5>
+                            <p>Answer common questions instantly and guide customers automatically.</p>
+                        </div>
                     </div>
                     <div class="home-whatsapp_content--text-features-item2">
                         <span>👥</span>
-                        <h5>Multi-Agent Live Chat</h5>
-                        <p>Manage customer enquiries through one organised shared team inbox.</p>
+                        <div class="home-whatsapp_content--text-features-item-text">
+                            <h5>Multi-Agent Live Chat</h5>
+                            <p>Manage customer enquiries through one organised shared team inbox.</p>
+                        </div>
                     </div>
                     <div class="home-whatsapp_content--text-features-item3">
                         <span>📣</span>
-                        <h5>Broadcast Campaigns</h5>
-                        <p>Send approved offers, updates and notifications to opted-in customers.</p>
+                        <div class="home-whatsapp_content--text-features-item-text">
+                            <h5>Broadcast Campaigns</h5>
+                            <p>Send approved offers, updates and notifications to opted-in customers.</p>
+                        </div>
                     </div>
                     <div class="home-whatsapp_content--text-features-item4">
                         <span>📊</span>
-                        <h5>Reports and Lead Tracking</h5>
-                        <p>Track conversations, customer responses and agent performance.</p>
+                        <div class="home-whatsapp_content--text-features-item-text">
+                            <h5>Reports and Lead Tracking</h5>
+                            <p>Track conversations, customer responses and agent performance.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="home-whatsapp_content--text-points">
@@ -3755,6 +3832,34 @@
         requestAnimationFrame(animate);
     }
     animate();
+
+    /////////////////////////////////////// What'sApp API //////////////////////////////////////////////////////
+
+    const messages = document.querySelectorAll(
+        ".home-whatsapp_content--deshboard-message .msg"
+    );
+
+    function playChat() {
+        // Reset animations
+        messages.forEach(msg => {
+            msg.style.animation = "none";
+            void msg.offsetWidth; // Force reflow
+            msg.style.animation = "";
+        });
+
+        // After all messages have appeared, hide them together
+        setTimeout(() => {
+            messages.forEach(msg => msg.classList.add("hidden-chat"));
+        }, 5200);
+
+        // Show them again and restart
+        setTimeout(() => {
+            messages.forEach(msg => msg.classList.remove("hidden-chat"));
+            playChat();
+        }, 6000);
+    }
+
+    playChat();
 </script>
 
 <?php include 'include/footer.php' ?>
