@@ -369,7 +369,7 @@
 
         <div class="kdts-logo-row">
             <!-- LOGO PLACEHOLDER: replace src="" with your logo file path -->
-            <!-- <img src="img/.jpg" class="kdts-logo-slot" src="" alt="Company logo"> -->
+            <!-- <img src="assets/images/img/.jpg" class="kdts-logo-slot" src="" alt="Company logo"> -->
         </div>
 
         <span class="kdts-badge">★★★★★ Client Reviews</span>
@@ -386,7 +386,7 @@
                 <!-- card 1 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/11.jpg" class="kdts-avatar" src="" alt="Mia R.">
+                        <img src="assets/images/img/11.jpg" class="kdts-avatar" src="" alt="Mia R.">
                         <div>
                             <p class="kdts-name">Mia R.</p>
                             <p class="kdts-role">Ecommerce Owner</p>
@@ -394,7 +394,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt=""></span>
                     </div>
                     <p class="kdts-text">Very reliable team. Every detail was handled with care and the final result looked
                         polished.</p>
@@ -404,7 +404,7 @@
                 <!-- card 2 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/15.jpg" class="kdts-avatar" src="" alt="James C.">
+                        <img src="assets/images/img/15.jpg" class="kdts-avatar" src="" alt="James C.">
                         <div>
                             <p class="kdts-name">James C.</p>
                             <p class="kdts-role">Founder</p>
@@ -412,7 +412,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">Our website speed and enquiry flow improved a lot. The design quality was truly
                         premium.</p>
@@ -422,7 +422,7 @@
                 <!-- card 3 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/21.jpg" class="kdts-avatar" src="" alt="Ava T.">
+                        <img src="assets/images/img/21.jpg" class="kdts-avatar" src="" alt="Ava T.">
                         <div>
                             <p class="kdts-name">Ava T.</p>
                             <p class="kdts-role">Business Client</p>
@@ -430,7 +430,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">The campaign setup was neat and transparent. We started getting better quality
                         enquiries within weeks.</p>
@@ -440,7 +440,7 @@
                 <!-- card 4 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/32.jpg" class="kdts-avatar" src="" alt="Robert M.">
+                        <img src="assets/images/img/32.jpg" class="kdts-avatar" src="" alt="Robert M.">
                         <div>
                             <p class="kdts-name">Robert M.</p>
                             <p class="kdts-role">Service Provider</p>
@@ -448,7 +448,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">Creative ideas, clean execution and quick support. They made our brand look far more
                         professional online.</p>
@@ -458,7 +458,7 @@
                 <!-- card 5 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/44.jpg" class="kdts-avatar" src="" alt="Sophia L.">
+                        <img src="assets/images/img/44.jpg" class="kdts-avatar" src="" alt="Sophia L.">
                         <div>
                             <p class="kdts-name">Sophia L.</p>
                             <p class="kdts-role">Marketing Manager</p>
@@ -466,7 +466,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">Their digital strategy was practical and effective, and the business presentation came
                         out beautifully.</p>
@@ -476,7 +476,7 @@
                 <!-- card 6 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/45.jpg" class="kdts-avatar" src="" alt="Daniel K.">
+                        <img src="assets/images/img/45.jpg" class="kdts-avatar" src="" alt="Daniel K.">
                         <div>
                             <p class="kdts-name">Daniel K.</p>
                             <p class="kdts-role">Operations Head</p>
@@ -484,7 +484,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">From planning to delivery, communication stayed clear the whole way. Exactly the kind
                         of partner we needed.</p>
@@ -500,7 +500,7 @@
                 <!-- card 7 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/52.jpg" class="kdts-avatar" src="" alt="Mia R.">
+                        <img src="assets/images/img/52.jpg" class="kdts-avatar" src="" alt="Mia R.">
                         <div>
                             <p class="kdts-name">Mia R.</p>
                             <p class="kdts-role">Ecommerce Owner</p>
@@ -508,7 +508,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">Very reliable team. Every detail was handled with care and the final result looked
                         polished.</p>
@@ -518,7 +518,7 @@
                 <!-- card 8 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/62.jpg" class="kdts-avatar" src="" alt="James C.">
+                        <img src="assets/images/img/62.jpg" class="kdts-avatar" src="" alt="James C.">
                         <div>
                             <p class="kdts-name">James C.</p>
                             <p class="kdts-role">Founder</p>
@@ -526,7 +526,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">Our website speed and enquiry flow improved a lot. The design quality was truly
                         premium.</p>
@@ -536,7 +536,7 @@
                 <!-- card 9 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/68.jpg" class="kdts-avatar" src="" alt="Ava T.">
+                        <img src="assets/images/img/68.jpg" class="kdts-avatar" src="" alt="Ava T.">
                         <div>
                             <p class="kdts-name">Ava T.</p>
                             <p class="kdts-role">Business Client</p>
@@ -544,7 +544,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">The campaign setup was neat and transparent. We started getting better quality
                         enquiries within weeks.</p>
@@ -554,7 +554,7 @@
                 <!-- card 10 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/71.jpg" class="kdts-avatar" src="" alt="Robert M.">
+                        <img src="assets/images/img/71.jpg" class="kdts-avatar" src="" alt="Robert M.">
                         <div>
                             <p class="kdts-name">Robert M.</p>
                             <p class="kdts-role">Service Provider</p>
@@ -562,7 +562,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">Creative ideas, clean execution and quick support. They made our brand look far more
                         professional online.</p>
@@ -572,7 +572,7 @@
                 <!-- card 11 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/75.jpg" class="kdts-avatar" src="" alt="Sophia L.">
+                        <img src="assets/images/img/75.jpg" class="kdts-avatar" src="" alt="Sophia L.">
                         <div>
                             <p class="kdts-name">Sophia L.</p>
                             <p class="kdts-role">Marketing Manager</p>
@@ -580,7 +580,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">Their digital strategy was practical and effective, and the business presentation came
                         out beautifully.</p>
@@ -590,7 +590,7 @@
                 <!-- card 12 -->
                 <div class="kdts-card">
                     <div class="kdts-footer">
-                        <img src="img/90.jpg" class="kdts-avatar" src="" alt="Daniel K.">
+                        <img src="assets/images/img/90.jpg" class="kdts-avatar" src="" alt="Daniel K.">
                         <div>
                             <p class="kdts-name">Daniel K.</p>
                             <p class="kdts-role">Operations Head</p>
@@ -598,7 +598,7 @@
                     </div>
                     <div class="kdts-card-top">
                         <span class="kdts-stars">★★★★★</span>
-                        <span class="kdts-quote-icon"><img src="img/google_icon_png.png" alt="" srcset=""></span>
+                        <span class="kdts-quote-icon"><img src="assets/images/img/google_icon_png.png" alt="" srcset=""></span>
                     </div>
                     <p class="kdts-text">From planning to delivery, communication stayed clear the whole way. Exactly the kind
                         of partner we needed.</p>
