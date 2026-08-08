@@ -303,15 +303,56 @@
         pointer-events: none;
     }
 
+    /* ============ TABLET (≤980px) — fixed selector + refinements ============ */
     @media (max-width: 980px) {
-        .home-service_content {
+        .home-service_content--grid {
             grid-template-columns: repeat(2, 1fr);
+            /* now this actually works */
+            gap: 20px;
+        }
+
+        .home-service_content--heading {
+            font-size: 28px;
+        }
+
+        .home-service_content--para {
+            font-size: 16px;
         }
     }
 
+    /* ============ MOBILE (≤560px) — fixed selector + refinements ============ */
     @media (max-width: 560px) {
-        .home-service_content {
+        .home-service {
+            padding: 60px 0;
+        }
+
+        .home-service_content--grid {
             grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .home-service_content--heading {
+            font-size: 24px;
+            letter-spacing: -0.4px;
+        }
+
+        .home-service_content--para {
+            font-size: 15px;
+        }
+
+        .home-service_content--card {
+            padding: 12px 16px 22px;
+        }
+
+        .home-service_content--card-img {
+            height: 180px;
+            /* a bit taller now that it's the only card per row */
+        }
+
+        .home-service_content--footer-cta {
+            width: 100%;
+            justify-content: center;
+            padding: 15px 24px;
         }
     }
 </style>

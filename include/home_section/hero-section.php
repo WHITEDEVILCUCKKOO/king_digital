@@ -363,6 +363,125 @@
         }
     }
 
+    /* ============ TABLET (≤1024px) ============ */
+    @media (max-width: 1024px) {
+        .home-hero {
+            max-height: none;
+            /* let content breathe instead of clipping */
+            padding: 90px 0 40px;
+        }
+
+        .home-hero_content {
+            flex-direction: column-reverse;
+            /* image on top, text below like your screenshot */
+            gap: 32px;
+            text-align: center;
+        }
+
+        .home-hero_content--text {
+            max-width: 100%;
+        }
+
+        .home-hero_content--upper-feature {
+            white-space: normal;
+            /* stop the badge text overflowing */
+            text-align: center;
+            max-width: 90%;
+            margin: 0 auto 18px;
+        }
+
+        .home-hero_content--heading {
+            font-size: 32px;
+        }
+
+        .home-hero_content--cta {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .home-hero_content--features {
+            max-width: 480px;
+            margin: 10px auto 0;
+        }
+
+        .home-hero_content--visual-img {
+            max-width: 420px;
+            margin: 0 auto;
+        }
+
+        /* floating badges were overlapping the "King" text — pull them inside */
+        .home-hero_content--visual-text {
+            font-size: 13px;
+            padding: 10px 14px;
+        }
+
+        .home-hero_content--visual-text--growth {
+            top: 10px;
+            left: 0;
+        }
+
+        .home-hero_content--visual-text--campaigns {
+            top: auto;
+            bottom: 80px;
+            right: 0;
+        }
+
+        .home-hero_content--visual-text--clients {
+            bottom: 10px;
+            left: 0;
+        }
+    }
+
+    /* ============ MOBILE (≤640px) ============ */
+    @media (max-width: 640px) {
+        .home-hero {
+            padding: 80px 0 32px;
+        }
+
+        .home-hero_content {
+            width: 92%;
+            gap: 24px;
+        }
+
+        .home-hero_content--heading {
+            font-size: 26px;
+            margin-bottom: 14px;
+        }
+
+        .home-hero_content--para {
+            font-size: 14px;
+        }
+
+        .home-hero_content--cta {
+            flex-direction: column;
+            width: 100%;
+            gap: 12px;
+        }
+
+        .home-hero_content--cta a {
+            width: 100%;
+            padding: 14px 20px;
+        }
+
+        /* 3-column stat grid is too tight on phones — drop to 1 column */
+        .home-hero_content--features {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .home-hero_content--visual-img {
+            max-width: 280px;
+            padding: 10px;
+        }
+
+        /* floating badges are too cramped on small screens — hide them, keep the core visual */
+        .home-hero_content--visual-text--growth,
+        .home-hero_content--visual-text--campaigns,
+        .home-hero_content--visual-text--clients {
+            display: none;
+        }
+    }
+
     /* ////////////////////////////////////////////////// Hero Styling End ////////////////////////////////////////// */
 </style>
 

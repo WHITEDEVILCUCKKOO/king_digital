@@ -425,6 +425,127 @@
             gap: 16px;
         }
     }
+
+    /* ============ TABLET (≤900px) — enhancing your existing block ============ */
+    @media (max-width: 900px) {
+        .home-about {
+            padding: 60px 0;
+        }
+
+        .home-about_content--heading {
+            font-size: 34px;
+        }
+
+        .home-about_content2 {
+            width: 90%;
+            /* was 70% — way too narrow on tablet/mobile */
+            flex-direction: column;
+            gap: 60px;
+            /* was 90px — that's a lot of dead space */
+        }
+
+        .home-about_content2--visual {
+            max-width: 400px;
+            width: 100%;
+            height: 420px;
+            /* scale the fixed canvas down a bit */
+            margin: 0 auto;
+        }
+
+        .home-about_content2--heading {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .home-about_content2--text-badge,
+        .home-about_content2--para {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .home-about_content2--text-badge {
+            display: flex;
+        }
+
+        .home-about_content2--features {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .home-about_content2--cta {
+            display: flex;
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+
+    /* ============ MOBILE (≤640px) ============ */
+    @media (max-width: 640px) {
+        .home-about_content {
+            width: 92%;
+        }
+
+        .home-about_content--heading {
+            font-size: 26px;
+        }
+
+        .home-about_content--para {
+            font-size: 14.5px;
+        }
+
+        /* the collage's absolute-positioned pieces get tight below ~380px —
+       scale the whole box down and shrink the badge so nothing overlaps */
+        .home-about_content2--visual {
+            max-width: 300px;
+            height: 320px;
+        }
+
+        .home-about_content2--visual-img1 img {
+            height: 190px;
+        }
+
+        .home-about_content2--visual-badge {
+            top: 215px;
+            left: -12px;
+            width: 170px;
+            height: 70px;
+            font-size: 18px;
+        }
+
+        .home-about_content2--visual-badge h4 {
+            font-size: 15px;
+        }
+
+        .home-about_content2--visual-img2 {
+            top: 115px;
+            width: 58%;
+        }
+
+        .home-about_content2--visual-img2 img {
+            height: 130px;
+        }
+
+        .home-about_content2--visual-img2--info h3 {
+            font-size: 24px;
+        }
+
+        .home-about_content2--heading {
+            font-size: 24px;
+        }
+
+        .home-about_content2--points-item p,
+        .home-about_content2--features-items h4 {
+            font-size: 14px;
+        }
+
+        .home-about_content2--cta {
+            width: 100%;
+            justify-content: center;
+            padding: 15px 24px;
+        }
+    }
 </style>
 
 <section class="home-about">
