@@ -131,27 +131,6 @@
         transition: opacity .6s ease-in, transform 6s ease-in;
     }
 
-    .home-webDesign_content--grid-items-img img.img-default {
-        opacity: 1;
-        transform: scale(1);
-        z-index: 0;
-    }
-
-    .home-webDesign_content--grid-items-img img.img-hover {
-        opacity: 0;
-        transform: scale(1.08);
-        z-index: 0;
-    }
-
-    .home-webDesign_content--grid-items:hover .img-default {
-        opacity: 0;
-    }
-
-    .home-webDesign_content--grid-items:hover .img-hover {
-        opacity: 1;
-    }
-
-    /* darkening gradient so text always reads, deepens on hover */
 
     .home-webDesign_content--grid-items-img::after {
         content: "";
@@ -204,6 +183,12 @@
     }
 
     /* hover reveal: description + arrow */
+
+    .home-webDesign_content--grid-items-img:hover {
+        transform: scale(1.1);
+        /* opacity: 0.9; */
+        transition: 0.25s ease;
+    }
 
     .home-webDesign_content--hover-text {
         position: absolute;
@@ -308,8 +293,9 @@
 
             <div class="home-webDesign_content--grid-items">
                 <div class="home-webDesign_content--grid-items-img">
-                    <img class="img-default" src="assets/images/webDesign/corporate-websites.avif" alt="Corporate Websites">
-                    <img class="img-hover" src="assets/images/webDesign/corporate-websites.avif" alt="Corporate Websites">
+                    <img src="assets/images/webDesign/corporate-websites.avif" alt="Corporate Websites">
+                </div>
+                <div class="home-webDesign_content--grid-items-heading">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -332,8 +318,9 @@
 
             <div class="home-webDesign_content--grid-items">
                 <div class="home-webDesign_content--grid-items-img">
-                    <img class="img-default" src="assets/images/webDesign/lead-capture-page.avif" alt="Lead Capture Pages">
-                    <img class="img-hover" src="assets/images/webDesign/lead-capture-page.avif" alt="Lead Capture Pages">
+                    <img src="assets/images/webDesign/lead-capture-page.avif" alt="Lead Capture Pages">
+                </div>
+                <div class="home-webDesign_content--grid-items-heading">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -367,8 +354,7 @@
 
             <div class="home-webDesign_content--grid-items">
                 <div class="home-webDesign_content--grid-items-img">
-                    <img class="img-default" src="assets/images/webDesign/blog.avif" alt="Blog Websites">
-                    <img class="img-hover" src="assets/images/webDesign/blog.avif" alt="Blog Websites">
+                    <img src="assets/images/webDesign/blog.avif" alt="Blog Websites">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
@@ -389,8 +375,7 @@
 
             <div class="home-webDesign_content--grid-items">
                 <div class="home-webDesign_content--grid-items-img">
-                    <img class="img-default" src="assets/images/webDesign/landing-page.avif" alt="Landing Pages">
-                    <img class="img-hover" src="assets/images/webDesign/landing-page.avif" alt="Landing Pages">
+                    <img src="assets/images/webDesign/landing-page.avif" alt="Landing Pages">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -433,8 +418,7 @@
 
             <div class="home-webDesign_content--grid-items">
                 <div class="home-webDesign_content--grid-items-img">
-                    <img class="img-default" src="assets/images/webDesign/dynamic-website.avif" alt="Dynamic Websites">
-                    <img class="img-hover" src="assets/images/webDesign/dynamic-website.avif" alt="Dynamic Websites">
+                    <img src="assets/images/webDesign/dynamic-website.avif" alt="Dynamic Websites">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"

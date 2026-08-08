@@ -169,8 +169,20 @@
         }
 
         .home-service_content--card-icon {
-            background-color: #101827;
-            box-shadow: 0 15px 32px rgba(6, 20, 38, 0.36), 0 8px 25px rgba(16, 58, 107, 0.26), 0 0 0 7px rgba(16, 58, 107, 0.10), inset 0 1px 1px rgba(255, 255, 255, 0.30), inset 0 -7px 15px rgba(3, 14, 27, 0.18);
+            background: linear-gradient(145deg,
+                    #163d70 0%,
+                    #0d2f5c 50%,
+                    #08254a 100%);
+
+            border: 4px solid rgba(255, 255, 255, 0.75);
+
+            box-shadow:
+                0 15px 32px rgba(6, 20, 38, 0.36),
+                0 8px 25px rgba(16, 58, 107, 0.40),
+                0 0 0 7px rgba(255, 255, 255, 0.45),
+                0 0 18px rgba(30, 91, 160, 0.35),
+                inset 0 1px 1px rgba(255, 255, 255, 0.45),
+                inset 0 -7px 15px rgba(3, 14, 27, 0.18);
         }
 
         .home-service_content--card-icon span {
@@ -346,7 +358,6 @@
 
         .home-service_content--card-img {
             height: 180px;
-            /* a bit taller now that it's the only card per row */
         }
 
         .home-service_content--footer-cta {
