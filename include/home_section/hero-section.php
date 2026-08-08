@@ -367,7 +367,7 @@
     @media (max-width: 1024px) {
         .home-hero {
             max-height: none;
-            padding: 90px 0 40px;
+            padding: 100px 0 40px;
         }
 
         #canvas {
@@ -435,7 +435,7 @@
 
     @media (max-width: 640px) {
         .home-hero {
-            padding: 80px 0 32px;
+            padding: 100px 0 32px;
         }
 
         .home-hero_content {
