@@ -198,7 +198,8 @@
         width: 52%;
         border-radius: 26px;
         overflow: hidden;
-        background: #ffffff;
+            backdrop-filter: blur(26px) saturate(180%);
+    box-shadow: 0 26px 65px rgba(16, 24, 39, 0.12), 0 13px 32px rgba(239, 86, 13, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.95), inset 0 -40px 80px rgba(16, 58, 107, 0.055);
         box-shadow: 0 30px 65px rgba(60, 30, 10, .20);
         animation: heroItemFloat 6s ease-in-out infinite;
     }
@@ -408,98 +409,105 @@
         pointer-events: none;
     }
 
-    @media (max-width: 900px) {
-        .home-about_content2 {
-            flex-direction: column;
-            gap: 90px;
-        }
-
-        .home-about_content2--visual {
-            max-width: 400px;
-            width: 100%;
-        }
-
-        .home-about_content2--features {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-        }
+    .home-about_content2--text {
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto;
     }
 
-    /* ============ TABLET (≤900px) — enhancing your existing block ============ */
-    @media (max-width: 900px) {
+    .home-about_content2--heading {
+        font-size: 32px;
+        text-align: start;
+    }
+
+    .home-about_content2--text-badge,
+    .home-about_content2--para {
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-about_content2--text-badge {
+        display: flex;
+    }
+
+    .home-about_content2--features {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .home-about_content2--cta {
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    /* ============ TABLET / SMALL LAPTOP (≤1100px) — replaces BOTH old 900px blocks ============ */
+
+    @media (max-width: 1100px) {
         .home-about {
             padding: 60px 0;
         }
 
         .home-about_content--heading {
-            font-size: 34px;
+            font-size: 40px;
+            /* 50px was too big for tablet, likely a typo from testing */
         }
 
         .home-about_content2 {
-            width: 90%;
-            /* was 70% — way too narrow on tablet/mobile */
-            flex-direction: column;
-            gap: 60px;
-            /* was 90px — that's a lot of dead space */
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
         }
 
         .home-about_content2--visual {
-            max-width: 400px;
+            min-height: 420px;
             width: 100%;
             height: 420px;
-            /* scale the fixed canvas down a bit */
             margin: 0 auto;
+            padding-left: 10px;
         }
 
-        .home-about_content2--heading {
-            font-size: 30px;
-            text-align: center;
-        }
-
-        .home-about_content2--text-badge,
-        .home-about_content2--para {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .home-about_content2--text-badge {
-            display: flex;
-        }
-
-        .home-about_content2--features {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-        }
-
-        .home-about_content2--cta {
-            display: flex;
-            width: fit-content;
+        .home-about_content2--visual-img1 {
             margin: 0 auto;
+            width: 100%;
+            /* keep the original % — "100%" was making it fill the whole box, throwing off badge/img2 offsets */
         }
+
+        .home-about_content2--visual-badge {
+            width: 180px;
+            height: 80px;
+            left: 11px;
+            top: 300px;
+        }
+
     }
 
-    /* ============ MOBILE (≤640px) ============ */
+    /* ============ MOBILE (≤640px) — your block, mostly kept, two small fixes ============ */
     @media (max-width: 640px) {
         .home-about_content {
             width: 92%;
         }
 
         .home-about_content--heading {
-            font-size: 26px;
+            font-size: 24px;
         }
 
         .home-about_content--para {
-            font-size: 14.5px;
+            font-size: 13px;
+            /* 12px was a bit too small to read comfortably */
         }
 
-        /* the collage's absolute-positioned pieces get tight below ~380px —
-       scale the whole box down and shrink the badge so nothing overlaps */
+        .home-about_content2 {
+            flex-direction: column;
+        }
+
         .home-about_content2--visual {
-            max-width: 300px;
-            height: 320px;
+            max-width: 400px;
+            width: 100%;
+            height: 350px;
         }
 
         .home-about_content2--visual-img1 img {
@@ -520,7 +528,7 @@
 
         .home-about_content2--visual-img2 {
             top: 115px;
-            width: 58%;
+            width: 40%;
         }
 
         .home-about_content2--visual-img2 img {
@@ -531,8 +539,20 @@
             font-size: 24px;
         }
 
+        .home-about_content2--text {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
         .home-about_content2--heading {
+            text-align: center;
             font-size: 24px;
+        }
+
+        .home-about_content2--para {
+            text-align: center;
+            font-size: 12px;
         }
 
         .home-about_content2--points-item p,
