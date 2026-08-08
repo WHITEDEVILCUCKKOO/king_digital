@@ -367,13 +367,16 @@
     @media (max-width: 1024px) {
         .home-hero {
             max-height: none;
-            /* let content breathe instead of clipping */
+            padding: 90px 0 40px;
+        }
+
+        #canvas {
+            max-height: none;
             padding: 90px 0 40px;
         }
 
         .home-hero_content {
-            flex-direction: column-reverse;
-            /* image on top, text below like your screenshot */
+            flex-direction: column;
             gap: 32px;
             text-align: center;
         }
@@ -384,7 +387,6 @@
 
         .home-hero_content--upper-feature {
             white-space: normal;
-            /* stop the badge text overflowing */
             text-align: center;
             max-width: 90%;
             margin: 0 auto 18px;
@@ -405,11 +407,10 @@
         }
 
         .home-hero_content--visual-img {
-            max-width: 420px;
+            min-width: 450px;
             margin: 0 auto;
         }
 
-        /* floating badges were overlapping the "King" text — pull them inside */
         .home-hero_content--visual-text {
             font-size: 13px;
             padding: 10px 14px;
@@ -432,7 +433,6 @@
         }
     }
 
-    /* ============ MOBILE (≤640px) ============ */
     @media (max-width: 640px) {
         .home-hero {
             padding: 80px 0 32px;
