@@ -19,7 +19,6 @@
         top: 0;
         left: 0;
         width: 100%;
-        max-width: 1440px;
         height: 100%;
         max-height: 578px;
         pointer-events: none;

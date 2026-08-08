@@ -18,6 +18,8 @@
 
     <?php include_once 'include/home_section/why_choose_static_king.php' ?>
 
+    <?php include_once 'include/home_section/web-develop-section.php' ?>
+
     <?php include_once 'include/home_section/cloud_telephony_services.php' ?>
 
     <?php include_once 'include/home_section/video_production_service.php' ?>
