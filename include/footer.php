@@ -113,8 +113,8 @@
 
   #scrollTopBtn {
     position: fixed;
-    right: 24px;
-    bottom: 24px;
+    right: 10px;
+    bottom: 47px;
 
     opacity: 0;
     transform: translateY(100px);
