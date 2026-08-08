@@ -461,6 +461,8 @@
         left: 0;
         top: 0;
         bottom: 0;
+        width: var(--progress, 0%);
+        transition: width 2s ease;
         border-radius: 6px;
         background: linear-gradient(90deg, #f47c28, #e8631a);
     }
@@ -473,55 +475,55 @@
         text-align: right;
     }
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(2) span:first-child::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(2) span:first-child::before {
         content: "Delivered";
-    }
+    } */
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(2) p::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(2) p::before {
         width: 97%;
-    }
+    } */
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(2) span:last-child::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(2) span:last-child::before {
         content: "97%";
-    }
+    } */
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(3) span:first-child::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(3) span:first-child::before {
         content: "Opened";
-    }
+    } */
 
     .home-bulksms_content--info-dashboard-report-item:nth-child(3) p::before {
-        width: 89%;
+
         background: linear-gradient(90deg, #2f6fed, #1a4fc4);
     }
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(3) span:last-child::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(3) span:last-child::before {
         content: "89%";
-    }
+    } */
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(4) span:first-child::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(4) span:first-child::before {
         content: "Link Clicks";
-    }
+    } */
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(4) p::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(4) p::before {
         width: 64%;
-    }
+    } */
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(4) span:last-child::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(4) span:last-child::before {
         content: "64%";
-    }
+    } */
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(5) span:first-child::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(5) span:first-child::before {
         content: "Responses";
-    }
+    } */
 
     .home-bulksms_content--info-dashboard-report-item:nth-child(5) p::before {
-        width: 42%;
+        /* width: 42%; */
         background: #c7ccd6;
     }
 
-    .home-bulksms_content--info-dashboard-report-item:nth-child(5) span:last-child::before {
+    /* .home-bulksms_content--info-dashboard-report-item:nth-child(5) span:last-child::before {
         content: "42%";
-    }
+    } */
 
     .home-bulksms_content--info-dashboard-message {
         display: flex;
@@ -732,16 +734,16 @@
                     <h3></h3>
                 </div>
                 <div class="home-bulksms_content--info-dashboard-report-item"><span></span>
-                    <p></p><span></span>
+                    <p data-width="97"></p><span><span class="count" data-target="97">0</span>%</span>
                 </div>
                 <div class="home-bulksms_content--info-dashboard-report-item"><span></span>
-                    <p></p><span></span>
+                    <p data-width="89"></p><span><span class="count" data-target="89">0</span>%</span>
                 </div>
                 <div class="home-bulksms_content--info-dashboard-report-item"><span></span>
-                    <p></p><span></span>
+                    <p data-width="64"></p><span><span class="count" data-target="64">0</span>%</span>
                 </div>
                 <div class="home-bulksms_content--info-dashboard-report-item"><span></span>
-                    <p></p><span></span>
+                    <p data-width="42"></p><span><span class="count" data-target="42">0</span>%</span>
                 </div>
             </div>
 
@@ -767,3 +769,48 @@
         <a href="#" class="home-bulksms_content--cta">Start Your Bulk SMS Campaign <span>→</span></a>
     </div>
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const bars = document.querySelectorAll(
+            ".home-bulksms_content--info-dashboard-report-item p"
+        );
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+
+                    const target = entry.target.dataset.width;
+
+                    entry.target.style.setProperty("--progress", "0%");
+
+                    setTimeout(function() {
+
+                        entry.target.style.setProperty("--progress", target + "%");
+
+                    }, 100);
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        }, {
+
+            threshold: 0.4
+
+        });
+
+        bars.forEach(function(bar) {
+
+            observer.observe(bar);
+
+        });
+
+    });
+</script>
+

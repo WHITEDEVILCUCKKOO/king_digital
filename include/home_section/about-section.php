@@ -202,6 +202,7 @@
     box-shadow: 0 26px 65px rgba(16, 24, 39, 0.12), 0 13px 32px rgba(239, 86, 13, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.95), inset 0 -40px 80px rgba(16, 58, 107, 0.055);
         box-shadow: 0 30px 65px rgba(60, 30, 10, .20);
         animation: heroItemFloat 6s ease-in-out infinite;
+            background: #ffffff9e;
     }
 
     .home-about_content2--visual-img2--info {
