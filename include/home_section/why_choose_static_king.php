@@ -1,4 +1,4 @@
-<!-- Why Choose Static King -->
+<!-- Why Choose king digital -->
 
 <style>
     .skWc-wrapper {
@@ -479,11 +479,11 @@
         <!-- RIGHT: Content -->
         <div class="skWc-contentCol" id="skWcContentCol">
 
-            <span class="skWc-badgeTag">Why Choose Static King</span>
+            <span class="skWc-badgeTag">Why Choose king digital</span>
 
             <h2 class="skWc-heading">Reliable Communication <span class="skWc-headingAccent">For Every Business</span></h2>
 
-            <p class="skWc-description">Static King gives businesses a complete platform to manage customer communication, marketing messages and lead generation. Our solutions are built for brands that need fast delivery, better response, smooth automation and professional support.</p>
+            <p class="skWc-description">king digital gives businesses a complete platform to manage customer communication, marketing messages and lead generation. Our solutions are built for brands that need fast delivery, better response, smooth automation and professional support.</p>
 
             <div class="skWc-statsRow">
                 <div class="skWc-statBox">

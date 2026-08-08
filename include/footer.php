@@ -9,7 +9,7 @@
         <!-- <div class="kd-logo-slot">your logo here</div> -->
       </div>
       <p class="kd-footer-desc">
-        Static King helps businesses grow with Bulk SMS, WhatsApp API, IVR, Voice SMS, Website Development, Video Production, Google Ads and Meta Ads solutions.
+        king digital helps businesses grow with Bulk SMS, WhatsApp API, IVR, Voice SMS, Website Development, Video Production, Google Ads and Meta Ads solutions.
       </p>
 
       <div class="kd-contact-item">
@@ -101,7 +101,7 @@
 
 
 <div class="kd-footer-bottom">
-  <strong>&#169; Copyright 2026 <span class="kd-brand-accent">Static King</span> | All Rights Reserved</strong>
+  <strong>&#169; Copyright 2026 <span class="kd-brand-accent">king digital</span> | All Rights Reserved</strong>
 </div>
 
 <style>

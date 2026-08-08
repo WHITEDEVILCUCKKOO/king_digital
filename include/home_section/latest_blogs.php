@@ -107,7 +107,7 @@
           border: 1px solid var(--abx91-card-border);
           border-radius: 18px;
           padding: 26px 24px 22px;
-          box-shadow: 0 10px 28px rgba(20, 20, 43, 0.05);
+          /* box-shadow: 0 10px 28px rgba(20, 20, 43, 0.05); */
           transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
       }
 
@@ -140,11 +140,13 @@
       }
 
       .abx91-card:hover {
+          /* border: 1px solid var(--abx91-card-border); */
+          border: 1px solid #ffd8c2;
           transform: translateY(-6px) scale(1.02);
-          box-shadow: 0 20px 40px rgba(255, 122, 26, 0.35);
+          /* box-shadow: 0 20px 40px rgba(255, 122, 26, 0.35); */
           z-index: 2;
           /* background: linear-gradient(135deg, var(--abx91-orange) 0%, var(--abx91-orange-dark) 100%); */
-          border-color: transparent;
+          /* border-color: transparent; */
       }
 
 
@@ -374,7 +376,7 @@
           border: 1px solid #ffd8c2;
           border-radius: 24px;
           overflow: hidden;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, .06)
+          /* box-shadow: 0 10px 30px rgba(0, 0, 0, .06) */
       }
 
       /* .abx91-card img.abx91-avatar {
@@ -444,6 +446,193 @@
           font-weight: 900;
           padding: 20px 15px;
           margin-bottom: 20px;
+      }
+
+      /* .colab_brand_a3e55 {
+          width: 100%;
+      }
+
+      .bran_box_start {
+          max-width: 1080px;
+          margin: auto;
+          position: relative;
+          z-index: 4;
+          overflow: hidden;
+          padding: 10px 0;
+          border-radius: 20px;
+          background: rgba(255, 255, 255, .36);
+          border: 1px solid rgba(239, 86, 13, .12);
+          backdrop-filter: blur(18px) saturate(180%);
+          -webkit-backdrop-filter: blur(18px) saturate(180%);
+          box-shadow: 0 16px 38px rgba(239, 86, 13, .07), inset 0 1px 1px rgba(255, 255, 255, .96), inset 0 -20px 40px rgba(239, 86, 13, .04);
+          display: flex;
+          gap: 10px;
+
+      }
+
+      @keyframes kdts-scroll232 {
+
+          0% {
+              transform: translateX(0);
+          }
+
+          100% {
+              transform: translateX(-50%);
+          }
+      }
+
+
+      .bran_box_start::before {
+          left: 0;
+          background: linear-gradient(90deg, rgba(246, 249, 252, .96), rgba(255, 255, 255, .66), transparent);
+
+      }
+
+      .bran_box_start::after {
+          right: 0;
+          background: linear-gradient(270deg, rgba(246, 249, 252, .96), rgba(255, 255, 255, .66), transparent);
+      }
+
+      .brand_img_box {
+          width: 126px;
+          height: 58px;
+          flex: 0 0 126px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          border-radius: 16px;
+          position: relative;
+          overflow: hidden;
+          background: rgba(255, 255, 255, .68);
+          border: 1px solid rgba(255, 255, 255, .78);
+          backdrop-filter: blur(22px) saturate(190%);
+          -webkit-backdrop-filter: blur(22px) saturate(190%);
+          box-shadow: 0 12px 26px rgba(16, 24, 39, .055), inset 0 1px 1px rgba(255, 255, 255, .95), inset 0 -18px 30px rgba(239, 86, 13, .05);
+          animation: kdts-scroll232 2s linear infinite;
+          will-change: transform;
+
+      }
+
+      .brand_img_box::before {
+          content: "";
+          position: absolute;
+          top: -90%;
+          left: -120%;
+          width: 45%;
+          height: 280%;
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .92), transparent);
+          transform: rotate(24deg);
+          animation: kdLogoShine852 6s ease-in-out infinite;
+          pointer-events: none;
+          z-index: 2;
+      }
+
+      @keyframes kdLogoShine852 {
+          0% {
+              transform: translateX(0);
+          }
+
+          100% {
+              transform: translateX(-50%);
+          }
+      }
+
+
+      .brand_img_box img {
+
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          display: block;
+          filter: grayscale(0%) contrast(1.08);
+          opacity: 1;
+          transition: transform .35s cubic-bezier(.22, 1, .36, 1), filter .35s ease, opacity .35s ease;
+      } */
+
+      .colab_brand_a3e55 {
+          width: 100%;
+          margin-top: 5rem;
+      }
+
+      .slider-wrap {
+          width: 74.5%;
+          background: #ffffff;
+          border-radius: 20px;
+          /* padding: 28px 0; */
+          box-shadow: 0 10px 30px rgba(20, 25, 40, 0.08);
+          background: rgba(255, 255, 255, .36);
+          border: 1px solid rgba(239, 86, 13, .12);
+          position: relative;
+          overflow: hidden;
+          margin: auto;
+      }
+
+      /* fade edges */
+      .slider-wrap::before,
+      .slider-wrap::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 90px;
+          z-index: 2;
+          pointer-events: none;
+      }
+
+      .slider-wrap::before {
+          left: 0;
+          background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+      }
+
+      .slider-wrap::after {
+          right: 0;
+          background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+      }
+
+      .track {
+          display: flex;
+          width: max-content;
+          animation: scroll 75s linear infinite;
+          padding: 10px 0;
+      }
+
+      /* .slider-wrap:hover .track {
+          animation-play-state: paused;
+      } */
+
+      @keyframes scroll {
+          from {
+              transform: translateX(0);
+          }
+
+          to {
+              transform: translateX(-50%);
+          }
+      }
+
+      .logo-card {
+          flex: 0 0 auto;
+          width: 100px;
+          height: 57px;
+          margin: 0 9px;
+          border-radius: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #f4f5f7;
+          /* padding: 14px; */
+          border-radius: 15px;
+          overflow: hidden;
+      }
+
+      .logo-card img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
       }
   </style>
 
@@ -618,6 +807,68 @@
           <div class="abx91-dots" id="abx91Dots" style="display: none;"></div>
 
       </div>
+
+
+      <div class="colab_brand_a3e55">
+
+          <div class="slider-wrap">
+              <div class="track" id="track">
+                  <!-- logos rendered by JS, duplicated for seamless loop -->
+              </div>
+          </div>
+      </div>
+
+      <script>
+          const logos = [
+              "assets/images/brand_img/1.png",
+              "assets/images/brand_img/2.png",
+              "assets/images/brand_img/3.png",
+              "assets/images/brand_img/4.png",
+              "assets/images/brand_img/5.png",
+              "assets/images/brand_img/6.png",
+              "assets/images/brand_img/7.png",
+              "assets/images/brand_img/8.png",
+              "assets/images/brand_img/9.png",
+              "assets/images/brand_img/10.png",
+              "assets/images/brand_img/11.png",
+              "assets/images/brand_img/12.png",
+              "assets/images/brand_img/13.png",
+              "assets/images/brand_img/14.png",
+              "assets/images/brand_img/15.png",
+              "assets/images/brand_img/16.png",
+              "assets/images/brand_img/17.png",
+              "assets/images/brand_img/18.png",
+              "assets/images/brand_img/19.png",
+              "assets/images/brand_img/20.png",
+              "assets/images/brand_img/21.png",
+              "assets/images/brand_img/22.png",
+              "assets/images/brand_img/23.png",
+              "assets/images/brand_img/24.png",
+              "assets/images/brand_img/25.png",
+              "assets/images/brand_img/26.png",
+              "assets/images/brand_img/27.png",
+              "assets/images/brand_img/28.png",
+              
+          ];
+
+          const track = document.getElementById('track');
+
+          function renderSet() {
+              logos.forEach(src => {
+                  const card = document.createElement('div');
+                  card.className = 'logo-card';
+                  const img = document.createElement('img');
+                  img.src = src;
+                  img.alt = 'client logo';
+                  card.appendChild(img);
+                  track.appendChild(card);
+              });
+          }
+
+          // duplicate the set so the loop is seamless
+          renderSet();
+          renderSet();
+      </script>
 
   </section>
 
