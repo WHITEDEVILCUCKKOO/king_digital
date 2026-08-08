@@ -1013,6 +1013,27 @@
       transform: translate(-50%, -50%) rotate(0deg);
     }
   }
+
+  .social_icon_sole_15 {
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    background: white !important;
+  }
+
+  .social_icon_sole_15 img {
+    width: 100%;
+  }
+  .social_icon_sole_16 {
+    width: 30px;
+    height: 30px;
+    /* padding: 10px; */
+    background: white !important;
+  }
+
+  .social_icon_sole_16 img {
+    width: 100%;
+  }
 </style>
 
 <section class="kingDig-wrapper">
@@ -1041,36 +1062,26 @@
 
       <div class="kingDig-platformRow">
         <span class="kingDig-platformPill">
-          <span class="kingDig-platformIcon kingDig-iconInstagram">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
-              <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"></circle>
-              <circle cx="17.3" cy="6.7" r="1.1"></circle>
-            </svg>
+          <span class="kingDig-platformIcon kingDig-iconInstagram social_icon_sole_16">
+            <img src="assets/images/social_media_icons/instagram.webp" alt="">
           </span>
           <span class="kingDig-platformLabel">Instagram</span>
         </span>
         <span class="kingDig-platformPill">
-          <span class="kingDig-platformIcon kingDig-iconFacebook">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M22 12a10 10 0 1 0-11.5 9.87v-6.98H7.9V12h2.6V9.8c0-2.57 1.53-4 3.87-4 1.12 0 2.29.2 2.29.2v2.52h-1.29c-1.27 0-1.67.79-1.67 1.6V12h2.84l-.45 2.89h-2.39v6.98A10 10 0 0 0 22 12z"></path>
-            </svg>
+          <span class="kingDig-platformIcon kingDig-iconFacebook social_icon_sole_16">
+           <img src="assets/images/social_media_icons/facebook.webp" alt="">
           </span>
           <span class="kingDig-platformLabel">Facebook</span>
         </span>
         <span class="kingDig-platformPill">
-          <span class="kingDig-platformIcon kingDig-iconLinkedin">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M6.94 8.5H3.56V21h3.38V8.5zM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92zM21 21h-3.37v-6.16c0-1.47-.03-3.36-2.05-3.36-2.06 0-2.37 1.6-2.37 3.25V21h-3.37V8.5h3.24v1.71h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.06 2.25 4.06 5.18V21z"></path>
-            </svg>
+          <span class="kingDig-platformIcon kingDig-iconLinkedin social_icon_sole_16">
+            <img src="assets/images/social_media_icons/linkedin.webp" alt="">
           </span>
           <span class="kingDig-platformLabel">LinkedIn</span>
         </span>
         <span class="kingDig-platformPill">
-          <span class="kingDig-platformIcon kingDig-iconYoutube">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5V8.5L15.8 12z"></path>
-            </svg>
+          <span class="kingDig-platformIcon kingDig-iconYoutube social_icon_sole_16">
+            <img src="assets/images/social_media_icons/youtube.webp" alt="">
           </span>
           <span class="kingDig-platformLabel">YouTube</span>
         </span>
@@ -1124,27 +1135,17 @@
         <span class="kingDig-glowBlur"></span>
 
         <!-- Floating social icons -->
-        <span class="kingDig-floatSocial kingDig-socialInstagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <circle cx="12" cy="12" r="4.2"></circle>
-            <circle cx="17.3" cy="6.7" r="1"></circle>
-          </svg>
+        <span class="kingDig-floatSocial kingDig-socialInstagram social_icon_sole_15">
+          <img src="assets/images/social_media_icons/instagram.webp" alt="">
         </span>
-        <span class="kingDig-floatSocial kingDig-socialFacebook">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M22 12a10 10 0 1 0-11.5 9.87v-6.98H7.9V12h2.6V9.8c0-2.57 1.53-4 3.87-4 1.12 0 2.29.2 2.29.2v2.52h-1.29c-1.27 0-1.67.79-1.67 1.6V12h2.84l-.45 2.89h-2.39v6.98A10 10 0 0 0 22 12z"></path>
-          </svg>
+        <span class="kingDig-floatSocial kingDig-socialFacebook social_icon_sole_15">
+          <img src="assets/images/social_media_icons/facebook.webp" alt="">
         </span>
-        <span class="kingDig-floatSocial kingDig-socialYoutube">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.5V8.5L15.8 12z"></path>
-          </svg>
+        <span class="kingDig-floatSocial kingDig-socialYoutube social_icon_sole_15">
+          <img src="assets/images/social_media_icons/youtube.webp" alt="">
         </span>
-        <span class="kingDig-floatSocial kingDig-socialLinkedin">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M6.94 8.5H3.56V21h3.38V8.5zM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92zM21 21h-3.37v-6.16c0-1.47-.03-3.36-2.05-3.36-2.06 0-2.37 1.6-2.37 3.25V21h-3.37V8.5h3.24v1.71h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.06 2.25 4.06 5.18V21z"></path>
-          </svg>
+        <span class="kingDig-floatSocial kingDig-socialLinkedin social_icon_sole_15">
+          <img src="assets/images/social_media_icons/linkedin.webp" alt="">
         </span>
         <span class="home_visual-inner-circle-12"></span>
         <span class="home_visual-outer-circle-12"></span>
